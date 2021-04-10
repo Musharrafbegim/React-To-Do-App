@@ -1,0 +1,14 @@
+@import 'styles/colors';
+
+.button {
+  * {
+    pointer-events: none;
+  }
+  border: 1px solid lightgray !important;
+}
+
+.active {
+  border: 1px solid $primary-color !important;
+  color: $primary-color !important;
+  font-weight: 500;
+}

@@ -1,0 +1,41 @@
+@import 'styles/colors.scss';
+
+.background {
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  padding: 2rem 2.1rem 1.4rem;
+  z-index: 1;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  > h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 9px;
+    margin-bottom: 17px;
+  }
+  > span {
+    font-size: 0.95rem;
+    color: $outline-color;
+    line-height: 30px;
+  }
+  &.invert {
+    align-items: flex-end;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}

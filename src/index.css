@@ -1,0 +1,99 @@
+@import '~normalize.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/datetime/lib/css/blueprint-datetime.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f5f7;
+}
+
+/* Overwrite some styles from Blueprint */
+.bp3-control input:focus ~ .bp3-control-indicator,
+input:focus,
+input:active,
+button:active,
+button:focus {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.panel-button {
+  color: #fff !important;
+  font-weight: 500;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.panel-button > span {
+  text-transform: uppercase;
+}
+
+.category-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.category-dot.personal {
+  background-color: #f2d06c;
+}
+.category-dot.business {
+  background-color: #8a5458;
+}
+.category-dot.work {
+  background-color: #0253b3;
+}
+.category-dot.family {
+  background-color: #ca89fc;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

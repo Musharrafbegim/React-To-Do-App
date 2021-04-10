@@ -1,0 +1,23 @@
+@import 'styles/colors';
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  span {
+    color: #000;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 85px;
+  }
+  svg {
+    :global(.bp3-spinner-track) {
+      stroke: rgba($primary-color, 0.2);
+    }
+    :global(.bp3-spinner-head) {
+      stroke: rgba($primary-color, 0.8);
+    }
+  }
+}
